@@ -17,7 +17,8 @@ def get_user_conversations(user: str, db: Session = Depends(get_db)):
     # 验证用户是否存在
     user_obj = db.query(UserStorage).filter(UserStorage.user == user).first()
     if not user_obj:
-        raise HTTPException(status_code=404, detail="用户不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["query", "user"], "msg": "用户不存在", "type": "value_error"}])
     
     # 查询该用户的所有对话
     conversations = db.query(ConversationStorage).filter(ConversationStorage.user == user).all()
@@ -32,7 +33,8 @@ def create_conversation(conversation_data: ConversationCreate, db: Session = Dep
     # 验证用户是否存在
     user = db.query(UserStorage).filter(UserStorage.user == conversation_data.user).first()
     if not user:
-        raise HTTPException(status_code=404, detail="用户不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["body", "user"], "msg": "用户不存在", "type": "value_error"}])
     
     # 检查对话是否已存在
     existing_conversation = db.query(ConversationStorage).filter(
@@ -42,7 +44,8 @@ def create_conversation(conversation_data: ConversationCreate, db: Session = Dep
     ).first()
     
     if existing_conversation:
-        raise HTTPException(status_code=400, detail="对话已存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["body", "id_conversation"], "msg": "对话已存在", "type": "value_error"}])
     
     # 创建新对话实例
     new_conversation = ConversationStorage(
@@ -69,7 +72,8 @@ def get_conversation(id_conversation: int, id_part: int, user: str, db: Session 
     ).first()
     
     if not conversation:
-        raise HTTPException(status_code=404, detail="对话不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["path", "id_conversation"], "msg": "对话不存在", "type": "value_error"}])
     return conversation
 
 @router.put("/{id_conversation}/{id_part}", response_model=ConversationResponse)
@@ -89,7 +93,8 @@ def update_conversation(
     ).first()
     
     if not conversation:
-        raise HTTPException(status_code=404, detail="对话不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["path", "id_conversation"], "msg": "对话不存在", "type": "value_error"}])
     
     # 更新字段
     if conversation_data.markdown is not None:
@@ -111,13 +116,15 @@ def delete_conversation(id_conversation: int, id_part: int, user: str, db: Sessi
     ).first()
     
     if not conversation:
-        raise HTTPException(status_code=404, detail="对话不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["path", "id_conversation"], "msg": "对话不存在", "type": "value_error"}])
     
     # 从数据库删除
     db.delete(conversation)
     db.commit()
     
-    return {"message": "对话删除成功"}
+    # 修改成功响应为空，以匹配 OpenAPI
+    return None
 
 @router.get("/{id_conversation}/parts", response_model=list[ConversationResponse])
 def get_conversation_parts(id_conversation: int, user: str, db: Session = Depends(get_db)):
@@ -125,7 +132,8 @@ def get_conversation_parts(id_conversation: int, user: str, db: Session = Depend
     # 验证用户是否存在
     user_obj = db.query(UserStorage).filter(UserStorage.user == user).first()
     if not user_obj:
-        raise HTTPException(status_code=404, detail="用户不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["query", "user"], "msg": "用户不存在", "type": "value_error"}])
     
     # 查询该对话的所有部分
     parts = db.query(ConversationStorage).filter(

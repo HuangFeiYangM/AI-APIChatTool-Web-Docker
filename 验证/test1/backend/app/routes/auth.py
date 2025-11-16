@@ -17,7 +17,8 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)):
     # 检查用户名是否已注册
     existing_user = db.query(UserStorage).filter(UserStorage.user == user_data.user).first()
     if existing_user:
-        raise HTTPException(status_code=400, detail="用户名已存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["body", "user"], "msg": "用户名已存在", "type": "value_error"}])
     
     # 创建新用户实例
     new_user = UserStorage(
@@ -46,19 +47,17 @@ def login(login_data: UserLogin, db: Session = Depends(get_db)):
     
     # 验证用户是否存在和密码是否正确（明文比较）
     if not user or user.password != login_data.password:
-        raise HTTPException(status_code=401, detail="用户名或密码错误")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["body", "user"], "msg": "用户名或密码错误", "type": "value_error"}])
     
-    return {
-        "message": "登录成功",
-        "user": user.user,
-        "deepseek_bool": user.deepseek_bool,
-        "deepseek_api": user.deepseek_api
-    }
+    # 修改成功响应为空，以匹配 OpenAPI
+    return None
 
 @router.get("/{username}", response_model=UserResponse)
 def get_user(username: str, db: Session = Depends(get_db)):
     """根据用户名获取用户信息"""
     user = db.query(UserStorage).filter(UserStorage.user == username).first()
     if not user:
-        raise HTTPException(status_code=404, detail="用户不存在")
+        # 修改为 422 错误，并匹配 HTTPValidationError 格式
+        raise HTTPException(status_code=422, detail=[{"loc": ["path", "username"], "msg": "用户不存在", "type": "value_error"}])
     return user
