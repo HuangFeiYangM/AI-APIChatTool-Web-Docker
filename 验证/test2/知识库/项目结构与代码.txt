@@ -1,0 +1,398 @@
+我来帮您设计一个软件工程后端开发的项目结构。首先让我查询一下相关的知识库内容。
+
+让我再查询更多关于项目结构和架构设计的内容：
+
+基于知识库中的信息，我可以为您设计一个完整的后端项目结构。让我先查看一下所有可用的文件：
+
+现在让我读取更多关于项目说明的内容：
+
+基于知识库中的详细设计文档和项目说明，我为您设计一个完整的后端项目结构。这是一个基于FastAPI的多端大模型统一平台后端项目结构：
+
+## 后端项目结构设计
+
+```
+multi-model-platform-backend/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                    # FastAPI应用入口
+│   ├── config.py                  # 配置文件
+│   ├── database.py                # 数据库连接和会话管理
+│   ├── dependencies.py            # 依赖注入
+│   ├── middleware.py              # 中间件
+│   ├── exceptions.py              # 自定义异常
+│   │
+│   ├── api/                       # API路由层
+│   │   ├── __init__.py
+│   │   ├── v1/                    # API版本1
+│   │   │   ├── __init__.py
+│   │   │   ├── router.py         # 主路由注册
+│   │   │   ├── auth.py           # 认证相关路由
+│   │   │   ├── users.py          # 用户管理路由
+│   │   │   ├── conversations.py  # 对话管理路由
+│   │   │   ├── models.py         # 模型配置路由
+│   │   │   └── admin.py          # 管理员路由
+│   │   └── health.py             # 健康检查路由
+│   │
+│   ├── core/                      # 核心业务层
+│   │   ├── __init__.py
+│   │   ├── security.py           # 安全相关（JWT、密码加密）
+│   │   ├── models.py             # Pydantic数据模型
+│   │   └── constants.py          # 常量定义
+│   │
+│   ├── services/                  # 业务服务层
+│   │   ├── __init__.py
+│   │   ├── auth_service.py       # 认证服务
+│   │   ├── user_service.py       # 用户服务
+│   │   ├── conversation_service.py  # 对话服务
+│   │   ├── model_service.py      # 模型服务
+│   │   ├── model_router.py       # 模型路由服务
+│   │   └── admin_service.py      # 管理员服务
+│   │
+│   ├── repositories/              # 数据访问层
+│   │   ├── __init__.py
+│   │   ├── base.py               # 基础Repository
+│   │   ├── user_repository.py    # 用户数据访问
+│   │   ├── conversation_repository.py  # 对话数据访问
+│   │   ├── message_repository.py # 消息数据访问
+│   │   ├── model_repository.py   # 模型配置数据访问
+│   │   └── user_model_config_repository.py  # 用户模型配置数据访问
+│   │
+│   ├── models/                    # SQLAlchemy数据库模型
+│   │   ├── __init__.py
+│   │   ├── user.py               # 用户模型
+│   │   ├── conversation.py       # 对话模型
+│   │   ├── message.py            # 消息模型
+│   │   ├── system_model.py       # 系统模型配置
+│   │   └── user_model_config.py  # 用户模型配置
+│   │
+│   ├── schemas/                   # Pydantic模式（请求/响应）
+│   │   ├── __init__.py
+│   │   ├── auth.py               # 认证相关模式
+│   │   ├── user.py               # 用户相关模式
+│   │   ├── conversation.py       # 对话相关模式
+│   │   ├── message.py            # 消息相关模式
+│   │   └── model.py              # 模型相关模式
+│   │
+│   ├── utils/                     # 工具函数
+│   │   ├── __init__.py
+│   │   ├── validators.py         # 数据验证器
+│   │   ├── helpers.py            # 辅助函数
+│   │   ├── logger.py             # 日志配置
+│   │   └── api_clients/          # 第三方API客户端
+│   │       ├── __init__.py
+│   │       ├── base_client.py    # 基础API客户端
+│   │       ├── openai_client.py  # OpenAI API客户端
+│   │       ├── deepseek_client.py # DeepSeek API客户端
+│   │       └── wenxin_client.py  # 文心一言API客户端
+│   │
+│   └── tests/                     # 测试目录
+│       ├── __init__.py
+│       ├── conftest.py           # 测试配置
+│       ├── test_auth.py          # 认证测试
+│       ├── test_users.py         # 用户测试
+│       ├── test_conversations.py # 对话测试
+│       └── test_models.py        # 模型测试
+│
+├── alembic/                       # 数据库迁移
+│   ├── versions/                  # 迁移版本
+│   ├── env.py
+│   └── alembic.ini
+│
+├── scripts/                       # 脚本目录
+│   ├── init_db.py                 # 数据库初始化脚本
+│   ├── create_admin.py            # 创建管理员脚本
+│   └── seed_data.py               # 种子数据脚本
+│
+├── .env.example                   # 环境变量示例
+├── .gitignore                     # Git忽略文件
+├── requirements.txt               # Python依赖
+├── requirements-dev.txt           # 开发依赖
+├── pyproject.toml                 # 项目配置
+├── README.md                      # 项目说明
+└── Dockerfile                     # Docker配置（可选）
+```
+
+## 核心文件说明
+
+### 1. **app/main.py** - 应用入口
+```python
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from app.api.v1.router import api_router
+from app.config import settings
+from app.database import engine
+from app.models import Base
+
+# 创建数据库表
+Base.metadata.create_all(bind=engine)
+
+app = FastAPI(
+    title="多端大模型统一平台",
+    description="集成多个大模型服务的统一平台",
+    version="1.0.0"
+)
+
+# CORS配置
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.CORS_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# 注册路由
+app.include_router(api_router, prefix="/api/v1")
+```
+
+### 2. **app/config.py** - 配置管理
+```python
+from pydantic_settings import BaseSettings
+from typing import List
+
+class Settings(BaseSettings):
+    # 数据库配置
+    DATABASE_URL: str = "mysql+pymysql://root:123456@localhost:3306/multi_model_platform"
+    
+    # JWT配置
+    SECRET_KEY: str = "your-secret-key"
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440  # 24小时
+    
+    # CORS配置
+    CORS_ORIGINS: List[str] = ["http://localhost:3000"]
+    
+    # API配置
+    OPENAI_API_KEY: str = ""
+    DEEPSEEK_API_KEY: str = ""
+    WENXIN_API_KEY: str = ""
+    
+    class Config:
+        env_file = ".env"
+
+settings = Settings()
+```
+
+### 3. **app/models/** - 数据库模型
+基于知识库中的数据库设计，创建对应的SQLAlchemy模型：
+
+**app/models/user.py**
+```python
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, func
+from app.database import Base
+
+class User(Base):
+    __tablename__ = "users"
+    
+    user_id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    username = Column(String(255), unique=True, nullable=False)
+    password_hash = Column(String(255), nullable=False)
+    email = Column(String(255), unique=True, nullable=True)
+    is_active = Column(Boolean, default=True)
+    is_locked = Column(Boolean, default=False)
+    locked_reason = Column(String(500), nullable=True)
+    locked_until = Column(DateTime, nullable=True)
+    failed_login_attempts = Column(Integer, default=0)
+    last_login_at = Column(DateTime, nullable=True)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+```
+
+### 4. **app/schemas/** - 数据验证模式
+**app/schemas/auth.py**
+```python
+from pydantic import BaseModel, EmailStr, validator
+import re
+
+class UserRegister(BaseModel):
+    username: str
+    password: str
+    confirm_password: str
+    email: EmailStr | None = None
+    
+    @validator('username')
+    def validate_username(cls, v):
+        if not re.match(r'^[a-zA-Z0-9_]{3,255}$', v):
+            raise ValueError('用户名格式不正确')
+        return v
+    
+    @validator('password')
+    def validate_password(cls, v):
+        if len(v) < 6:
+            raise ValueError('密码至少需要6个字符')
+        return v
+
+class UserLogin(BaseModel):
+    username: str
+    password: str
+```
+
+### 5. **app/services/** - 业务逻辑层
+**app/services/auth_service.py**
+```python
+from datetime import datetime, timedelta
+from typing import Optional
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from app.config import settings
+from app.schemas.auth import TokenData
+from app.repositories.user_repository import UserRepository
+
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+class AuthService:
+    def __init__(self, user_repo: UserRepository):
+        self.user_repo = user_repo
+    
+    def verify_password(self, plain_password: str, hashed_password: str) -> bool:
+        return pwd_context.verify(plain_password, hashed_password)
+    
+    def get_password_hash(self, password: str) -> str:
+        return pwd_context.hash(password)
+    
+    def create_access_token(self, data: dict, expires_delta: Optional[timedelta] = None):
+        to_encode = data.copy()
+        if expires_delta:
+            expire = datetime.utcnow() + expires_delta
+        else:
+            expire = datetime.utcnow() + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+        
+        to_encode.update({"exp": expire})
+        encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
+        return encoded_jwt
+    
+    def authenticate_user(self, username: str, password: str):
+        user = self.user_repo.get_by_username(username)
+        if not user:
+            return False
+        if not self.verify_password(password, user.password_hash):
+            # 记录登录失败次数
+            self.user_repo.increment_failed_attempts(user.user_id)
+            return False
+        
+        # 重置登录失败次数
+        self.user_repo.reset_failed_attempts(user.user_id)
+        self.user_repo.update_last_login(user.user_id)
+        return user
+```
+
+### 6. **app/api/v1/** - API路由层
+**app/api/v1/auth.py**
+```python
+from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from app.schemas.auth import UserRegister, Token
+from app.services.auth_service import AuthService
+from app.services.user_service import UserService
+from app.dependencies import get_auth_service, get_user_service
+
+router = APIRouter(prefix="/auth", tags=["authentication"])
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
+
+@router.post("/register", response_model=dict)
+async def register(
+    user_data: UserRegister,
+    user_service: UserService = Depends(get_user_service)
+):
+    """用户注册"""
+    if user_data.password != user_data.confirm_password:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="两次输入的密码不一致"
+        )
+    
+    result = user_service.register_user(
+        username=user_data.username,
+        password=user_data.password,
+        email=user_data.email
+    )
+    
+    return {"status": "success", "user_id": result.user_id}
+
+@router.post("/login", response_model=Token)
+async def login(
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    auth_service: AuthService = Depends(get_auth_service)
+):
+    """用户登录"""
+    user = auth_service.authenticate_user(form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="用户名或密码错误",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+    access_token = auth_service.create_access_token(
+        data={"sub": str(user.user_id)}
+    )
+    return {"access_token": access_token, "token_type": "bearer"}
+```
+
+## 依赖文件
+
+### requirements.txt
+```
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+sqlalchemy==2.0.23
+pymysql==1.1.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+httpx==0.25.1
+alembic==1.13.1
+```
+
+### .env.example
+```env
+# 数据库配置
+DATABASE_URL=mysql+pymysql://root:123456@localhost:3306/multi_model_platform
+
+# JWT配置
+SECRET_KEY=your-secret-key-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=1440
+
+# CORS配置
+CORS_ORIGINS=["http://localhost:3000"]
+
+# API密钥
+OPENAI_API_KEY=your-openai-api-key
+DEEPSEEK_API_KEY=your-deepseek-api-key
+WENXIN_API_KEY=your-wenxin-api-key
+```
+
+## 项目特点
+
+1. **分层架构清晰**：
+   - API层：处理HTTP请求和响应
+   - 服务层：业务逻辑处理
+   - 数据访问层：数据库操作
+   - 模型层：数据定义
+
+2. **模块化设计**：
+   - 用户管理模块
+   - 对话管理模块
+   - 模型路由模块
+   - 系统管理模块
+
+3. **安全性考虑**：
+   - JWT身份验证
+   - 密码哈希存储
+   - 登录失败限制
+   - 输入验证
+
+4. **可扩展性**：
+   - 易于添加新的模型支持
+   - 模块化的API客户端
+   - 清晰的依赖注入
+
+5. **符合软件工程规范**：
+   - 基于知识库中的详细设计文档
+   - 遵循FastAPI最佳实践
+   - 完整的错误处理
+
+这个项目结构既考虑了当前的需求，也为未来的扩展预留了空间。您可以根据实际需求调整和扩展这个结构。
