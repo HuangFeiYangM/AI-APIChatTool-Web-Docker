@@ -1,0 +1,75 @@
+# docker-compose.yml
+
+
+services:
+  # MySQL 数据库服务
+  mysql:
+    image: mysql:8.0
+    container_name: multi-model-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # 生产环境请修改
+      MYSQL_DATABASE: mysql8db
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppassword
+    ports:
+      - "3310:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      # 挂载初始化脚本
+      - ./buildDB/init_v1.0.sql:/docker-entrypoint-initdb.d/init_v1.0.sql:ro
+    command: 
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  # 后端应用服务
+  backend:
+    build: .
+    container_name: multi-model-backend
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      # 从 .env 文件加载环境变量
+      DATABASE_URL: mysql+pymysql://appuser:apppassword@mysql:3306/mysql8db?charset=utf8mb4
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: 8001
+      DEBUG: "true"
+      # JWT 配置
+      SECRET_KEY: your-secret-key-change-in-production-1234567890abcdef
+      # API 密钥（可以从 .env 文件或环境变量注入）
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      WENXIN_API_KEY: ${WENXIN_API_KEY:-}
+    ports:
+      - "8001:8001"
+    volumes:
+      # 挂载日志目录
+      - ./logs:/app/logs
+      # 如果需要热重载开发，可以挂载代码（生产环境建议注释掉）
+      # - ./app:/app/app
+      # - ./start_app.py:/app/start_app.py
+    networks:
+      - app-network
+    # 等待数据库启动
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; r = requests.get('http://localhost:8001/health'); exit(0 if r.status_code == 200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local

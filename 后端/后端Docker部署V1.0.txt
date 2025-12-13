@@ -1,0 +1,9 @@
+multi-model-platform-backend/
+├── docker/
+│   ├── docker-compose.yml        # 组合服务定义
+│   └── mysql/
+│       └── initdb.d/
+│           └── init_v1.0.sql    # 数据库初始化脚本
+├── Dockerfile                    # 后端应用镜像构建
+├── .env.docker                  # Docker环境变量
+└── docker-entrypoint.sh         # 应用启动脚本

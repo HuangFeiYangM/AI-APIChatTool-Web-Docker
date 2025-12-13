@@ -1,0 +1,677 @@
+2025-12-06 14:55:50 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:148 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 14:55:50 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:151 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 14:55:50 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:148 - ✅ 日志系统初始化完成 (级别: DEBUG)
+2025-12-06 14:55:50 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:151 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 14:55:50 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 14:55:50 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 14:55:50 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 14:55:50 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:46 - 数据库连接失败: Class <class 'sqlalchemy.sql.elements.SQLCoreOperations'> directly inherits TypingOnly but has additional attributes {'__firstlineno__', '__static_attributes__'}.
+2025-12-06 14:55:50 - [94m__main__[0m - [94mDEBUG[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:52 - 这是一条DEBUG消息
+2025-12-06 14:55:50 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:53 - 这是一条INFO消息
+2025-12-06 14:55:50 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条WARNING消息
+2025-12-06 14:55:50 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条ERROR消息
+2025-12-06 14:55:50 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:60 - 这是来自test.module的日志
+2025-12-06 14:55:50 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:62 - 日志系统测试完成 ✓
+2025-12-06 15:11:46 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:11:46 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:11:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:11:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:11:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:11:46 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:46 - 数据库连接失败: No such event 'connect' for target 'None'
+2025-12-06 15:11:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:53 - 这是一条INFO消息
+2025-12-06 15:11:46 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条WARNING消息
+2025-12-06 15:11:46 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条ERROR消息
+2025-12-06 15:11:46 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:60 - 这是来自test.module的日志
+2025-12-06 15:11:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:62 - 日志系统测试完成 ✓
+2025-12-06 15:16:41 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:16:41 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:16:41 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:16:41 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:16:41 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:16:41 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:46 - 数据库连接失败: 'NoneType' object has no attribute 'connect'
+2025-12-06 15:16:41 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:53 - 这是一条INFO消息
+2025-12-06 15:16:41 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条WARNING消息
+2025-12-06 15:16:41 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条ERROR消息
+2025-12-06 15:16:41 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:60 - 这是来自test.module的日志
+2025-12-06 15:16:41 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:62 - 日志系统测试完成 ✓
+2025-12-06 15:19:58 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:19:58 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:19:58 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:19:58 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:19:58 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:19:58 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:46 - 数据库连接失败: invalid syntax. Perhaps you forgot a comma? (database.py, line 45)
+2025-12-06 15:19:58 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:53 - 这是一条INFO消息
+2025-12-06 15:19:58 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条WARNING消息
+2025-12-06 15:19:58 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条ERROR消息
+2025-12-06 15:19:58 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:60 - 这是来自test.module的日志
+2025-12-06 15:19:58 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:62 - 日志系统测试完成 ✓
+2025-12-06 15:22:46 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:22:46 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:22:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:22:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:22:46 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:22:47 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:46 - 数据库连接失败: cannot import name 'engine' from 'app.database' (C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py)
+2025-12-06 15:22:47 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:53 - 这是一条INFO消息
+2025-12-06 15:22:47 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条WARNING消息
+2025-12-06 15:22:47 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条ERROR消息
+2025-12-06 15:22:47 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:60 - 这是来自test.module的日志
+2025-12-06 15:22:47 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:62 - 日志系统测试完成 ✓
+2025-12-06 15:33:19 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:33:19 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:33:19 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:33:19 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:33:19 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:33:20 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:47 - 数据库连接失败: 数据库引擎未初始化，请先调用init_database()
+2025-12-06 15:33:20 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条INFO消息
+2025-12-06 15:33:20 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条WARNING消息
+2025-12-06 15:33:20 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:56 - 这是一条ERROR消息
+2025-12-06 15:33:20 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:61 - 这是来自test.module的日志
+2025-12-06 15:33:20 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:63 - 日志系统测试完成 ✓
+2025-12-06 15:36:11 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:36:11 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:36:11 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:36:11 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:36:11 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:36:12 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:47 - 数据库连接失败: 数据库引擎未初始化，请先调用init_database()
+2025-12-06 15:36:12 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:54 - 这是一条INFO消息
+2025-12-06 15:36:12 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:55 - 这是一条WARNING消息
+2025-12-06 15:36:12 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:56 - 这是一条ERROR消息
+2025-12-06 15:36:12 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:61 - 这是来自test.module的日志
+2025-12-06 15:36:12 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:63 - 日志系统测试完成 ✓
+2025-12-06 15:41:05 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 15:41:05 - [92mroot[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 15:41:05 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:21 - 开始测试配置...
+2025-12-06 15:41:05 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:32 - 配置测试完成 ✓
+2025-12-06 15:41:05 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:36 - 测试数据库连接...
+2025-12-06 15:41:05 - [92mapp.database[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 15:41:05 - [92mapp.database[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 15:41:05 - [92mapp.database[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 15:41:05 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:47 - ✅ 数据库连接成功 ✓
+2025-12-06 15:41:05 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:59 - 这是一条INFO消息
+2025-12-06 15:41:05 - [93m__main__[0m - [93mWARNING[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:60 - 这是一条WARNING消息
+2025-12-06 15:41:05 - [91m__main__[0m - [91mERROR[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:61 - 这是一条ERROR消息
+2025-12-06 15:41:05 - [92mtest.module[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:66 - 这是来自test.module的日志
+2025-12-06 15:41:05 - [92m__main__[0m - [92mINFO[0m - C:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\test_setup.py:68 - 日志系统测试完成 ✓
+2025-12-06 16:09:50 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:09:50 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:179 - ============================================================
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:180 - 开始验证SQLAlchemy模型...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:181 - ============================================================
+2025-12-06 16:09:50 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:09:50 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:09:50 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 
+📋 表创建验证...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:09:50 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:55 - ❌ 表创建验证失败: name 'relationship' is not defined
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 
+📋 表结构验证...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:62 - 验证表结构...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:91 - ✅ 表 'users' 结构正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:91 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:91 - ✅ 表 'messages' 结构正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:91 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:91 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 
+📋 外键验证...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:103 - 验证外键约束...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:135 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:135 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:135 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:135 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 
+📋 模型关系测试...
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:147 - 测试模型关系...
+2025-12-06 16:09:50 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:173 - ❌ 模型关系测试失败: name 'relationship' is not defined
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:205 - 
+============================================================
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:206 - 验证结果总结:
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:207 - ============================================================
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:212 - 表创建验证: ❌ 失败
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:212 - 表结构验证: ✅ 通过
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:212 - 外键验证: ✅ 通过
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:212 - 模型关系测试: ❌ 失败
+2025-12-06 16:09:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:219 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 16:33:19 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:33:19 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - ============================================================
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - 开始验证SQLAlchemy模型...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:202 - ============================================================
+2025-12-06 16:33:19 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:33:19 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:33:19 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 表创建验证...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 表结构验证...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:83 - 验证表结构...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'users' 结构正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'messages' 结构正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 外键验证...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:124 - 验证外键约束...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 模型关系测试...
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:168 - 测试模型关系...
+2025-12-06 16:33:19 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:194 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 
+============================================================
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - 验证结果总结:
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:228 - ============================================================
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 表创建验证: ✅ 通过
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 表结构验证: ✅ 通过
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 外键验证: ✅ 通过
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 模型关系测试: ❌ 失败
+2025-12-06 16:33:19 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:240 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 16:39:45 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:39:45 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - ============================================================
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - 开始验证SQLAlchemy模型...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:202 - ============================================================
+2025-12-06 16:39:45 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:39:45 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:39:45 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 表创建验证...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 表结构验证...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:83 - 验证表结构...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'users' 结构正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'messages' 结构正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:112 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 外键验证...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:124 - 验证外键约束...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:156 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:221 - 
+📋 模型关系测试...
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:168 - 测试模型关系...
+2025-12-06 16:39:45 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:194 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 
+============================================================
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - 验证结果总结:
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:228 - ============================================================
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 表创建验证: ✅ 通过
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 表结构验证: ✅ 通过
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 外键验证: ✅ 通过
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 模型关系测试: ❌ 失败
+2025-12-06 16:39:45 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:240 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 16:46:22 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:46:22 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 16:46:22 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:46:22 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:46:22 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 16:46:22 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 16:46:22 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 16:47:50 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:47:50 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 16:47:50 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:47:50 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:47:50 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 16:47:50 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 16:47:50 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 16:50:27 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:50:27 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 16:50:27 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:50:27 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:50:27 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 16:50:27 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 16:50:27 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 16:54:17 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 16:54:17 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 16:54:17 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 16:54:17 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 16:54:17 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 16:54:17 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 16:54:17 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 17:23:39 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 17:23:39 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 17:23:39 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 17:23:39 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 17:23:39 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 17:23:39 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:32 - ❌ 模型导入失败: cannot import name 'ModelType' from 'app.models.system_model' (c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\models\system_model.py)
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 17:23:39 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: cannot import name 'ModelType' from 'app.models.system_model' (c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\models\system_model.py)
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ❌ 失败
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 17:23:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 17:23:51 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 17:23:51 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 17:23:51 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 17:23:51 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 17:23:51 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 17:23:51 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 17:23:51 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 17:31:06 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 17:31:06 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 17:31:06 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 17:31:06 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 17:31:06 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 17:31:06 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 17:31:06 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 17:32:20 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 17:32:20 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 17:32:20 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 17:32:20 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 17:32:20 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 17:32:20 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:32 - ❌ 模型导入失败: cannot import name 'MessageRole' from 'app.models.message' (c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\models\message.py)
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 17:32:20 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: cannot import name 'MessageRole' from 'app.models.message' (c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\models\message.py)
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ❌ 失败
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 17:32:20 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 17:32:30 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 17:32:30 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - ============================================================
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:200 - 开始验证SQLAlchemy模型...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ============================================================
+2025-12-06 17:32:30 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 17:32:30 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 17:32:30 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表创建验证...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 表结构验证...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 外键验证...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:220 - 
+📋 模型关系测试...
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 17:32:30 - [91m__main__[0m - [91mERROR[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:193 - ❌ 模型关系测试失败: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:225 - 
+============================================================
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:226 - 验证结果总结:
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:227 - ============================================================
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表创建验证: ✅ 通过
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 表结构验证: ✅ 通过
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 外键验证: ✅ 通过
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:232 - 模型关系测试: ❌ 失败
+2025-12-06 17:32:30 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 
+⚠️  部分验证失败，请检查模型设计。
+2025-12-06 17:41:03 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 17:41:03 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:212 - ============================================================
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:213 - 开始验证SQLAlchemy模型...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:214 - ============================================================
+2025-12-06 17:41:03 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 17:41:03 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 17:41:03 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 
+📋 表创建验证...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:25 - 验证表创建...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:30 - ✅ 所有模型导入成功
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:53 - 期望的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:54 - 可创建的表: ['api_call_logs', 'conversations', 'messages', 'system_models', 'user_model_configs', 'users']
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:67 - ✅ 表创建验证通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 
+📋 表结构验证...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:82 - 验证表结构...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'users' 结构正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'conversations' 结构正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'messages' 结构正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'system_models' 结构正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:111 - ✅ 表 'user_model_configs' 结构正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 
+📋 外键验证...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:123 - 验证外键约束...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'conversations' 外键约束正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'messages' 外键约束正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'user_model_configs' 外键约束正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:155 - ✅ 表 'api_call_logs' 外键约束正确
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:233 - 
+📋 模型关系测试...
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:167 - 测试模型关系...
+2025-12-06 17:41:03 - [93m__main__[0m - [93mWARNING[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:185 - 查询模型时出现错误，尝试手动转换枚举: 'chat' is not among the defined enum values. Enum name: modeltype. Possible values: CHAT, COMPLETION, EMBEDDING
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:190 - 原始查询系统模型数量: 14
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:194 - 用户数量: 6
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:199 - 管理员用户: admin (admin@example.com)
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:201 - ✅ 模型关系测试通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:238 - 
+============================================================
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:239 - 验证结果总结:
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:240 - ============================================================
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:245 - 表创建验证: ✅ 通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:245 - 表结构验证: ✅ 通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:245 - 外键验证: ✅ 通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:245 - 模型关系测试: ✅ 通过
+2025-12-06 17:41:03 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\validate_models.py:250 - 
+🎉 所有验证通过！SQLAlchemy模型设计正确。
+2025-12-06 19:28:39 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:157 - ✅ 日志系统初始化完成 (级别: INFO)
+2025-12-06 19:28:39 - [92mroot[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\utils\logger.py:160 - 📁 日志文件: c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\logs\app.log
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:172 - ==================================================
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:173 - 开始数据库初始化...
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:174 - 数据库: mysql+pymysql://root:root@loca...
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:175 - ==================================================
+2025-12-06 19:28:39 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:34 - 正在初始化数据库连接...
+2025-12-06 19:28:39 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:61 - ✅ 数据库连接初始化成功 (池大小: 10)
+2025-12-06 19:28:39 - [92mapp.database[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\app\database.py:82 - ✅ 数据库连接测试通过
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:26 - 开始创建数据库表...
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:33 - ✅ 数据库表创建完成
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:52 - 系统模型数据已存在，跳过插入
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:145 - 管理员用户已存在，跳过创建
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:196 - ==================================================
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:197 - ✅ 数据库初始化完成！
+2025-12-06 19:28:39 - [92m__main__[0m - [92mINFO[0m - c:\Users\Huang_FeiYang\Desktop\LLMtest\验证\test2\scripts\init_db(noneed).py:198 - ==================================================
