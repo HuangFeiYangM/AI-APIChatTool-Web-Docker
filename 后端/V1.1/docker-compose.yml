@@ -6,12 +6,13 @@ services:
   mysql:
     image: mysql:8.0
     container_name: multi-model-mysql-v1.1
-    restart: always
+    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword  # 生产环境请修改
       MYSQL_DATABASE: mysql8db
       MYSQL_USER: appuser
       MYSQL_PASSWORD: apppassword
+      TZ: Asia/Shanghai
     ports:
       - "3311:3306"
     volumes:
@@ -22,6 +23,7 @@ services:
       --default-authentication-plugin=mysql_native_password
       --character-set-server=utf8mb4
       --collation-server=utf8mb4_unicode_ci
+
     networks:
       - app-network
     healthcheck:
@@ -33,7 +35,7 @@ services:
   backend:
     build: .
     container_name: multi-model-backend-v1.1
-    restart: always
+    restart: unless-stopped
     depends_on:
       mysql:
         condition: service_healthy
@@ -49,6 +51,8 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
       WENXIN_API_KEY: ${WENXIN_API_KEY:-}
+      TZ: Asia/Shanghai
+      
     ports:
       - "8002:8002"
     volumes:

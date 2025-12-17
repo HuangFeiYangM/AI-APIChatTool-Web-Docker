@@ -238,6 +238,7 @@ def is_password_strong(password: str) -> bool:
     if len(password) < 8:
         return False
     
+
     # 包含至少一个大写字母
     if not any(c.isupper() for c in password):
         return False
@@ -319,6 +320,10 @@ def check_password_policy(password: str) -> Dict[str, Any]:
     if len(password) < 8:
         result["is_valid"] = False
         result["errors"].append("密码至少需要8个字符")
+        
+    if len(password) > 16:
+        result["is_valid"] = False
+        result["errors"].append("密码最多16个字符")
     
     # 检查大写字母
     if not any(c.isupper() for c in password):

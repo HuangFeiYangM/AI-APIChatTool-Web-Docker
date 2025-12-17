@@ -5,7 +5,7 @@
 from typing import Optional, List, Dict, Any
 from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, func
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from app.models.user import User
 from app.repositories.base import BaseRepository

@@ -253,7 +253,29 @@ class ApiCallLogRepository(BaseRepository[ApiCallLog]):
         if end_date:
             query = query.filter(ApiCallLog.created_at <= end_date)
         
+        # result = query.first()
+        
+        # return {
+        #     "total_calls": result[0] or 0,
+        #     "total_request_tokens": result[1] or 0,
+        #     "total_response_tokens": result[2] or 0,
+        #     "total_tokens": result[3] or 0,
+        #     "avg_response_time": float(result[4] or 0),
+        #     "success_rate": float(result[5] or 0)
+        # }
+        
         result = query.first()
+        
+        # 处理查询结果为None的情况
+        if result is None:
+            return {
+                "total_calls": 0,
+                "total_request_tokens": 0,
+                "total_response_tokens": 0,
+                "total_tokens": 0,
+                "avg_response_time": 0.0,
+                "success_rate": 0.0
+            }
         
         return {
             "total_calls": result[0] or 0,
@@ -263,6 +285,7 @@ class ApiCallLogRepository(BaseRepository[ApiCallLog]):
             "avg_response_time": float(result[4] or 0),
             "success_rate": float(result[5] or 0)
         }
+
 
     
     
@@ -526,3 +549,32 @@ class ApiCallLogRepository(BaseRepository[ApiCallLog]):
             start_date=start_date,
             end_date=end_date
         )
+        
+    def get_stats_by_date(self, date: datetime) -> Dict[str, Any]:
+        """
+        获取指定日期的API调用统计
+        
+        Args:
+            date: 查询日期
+            
+        Returns:
+            统计信息字典，包含call_count和total_tokens
+        """
+        from sqlalchemy import func, cast, Integer
+        
+        # 计算日期的开始和结束时间
+        start_datetime = datetime(date.year, date.month, date.day, 0, 0, 0)
+        end_datetime = datetime(date.year, date.month, date.day, 23, 59, 59)
+        
+        result = self.db.query(
+            func.count(ApiCallLog.log_id).label('call_count'),
+            func.sum(ApiCallLog.total_tokens).label('total_tokens')
+        ).filter(
+            ApiCallLog.created_at >= start_datetime,
+            ApiCallLog.created_at <= end_datetime
+        ).first()
+        
+        return {
+            "call_count": result[0] or 0 if result else 0,
+            "total_tokens": result[1] or 0 if result else 0
+        }

@@ -178,6 +178,9 @@ async def get_user_model_configs(
                 "model_id": config.model_id,
                 "model_name": model_name,
                 "is_enabled": config.is_enabled,
+                # has_api_key
+                "has_api_key": bool(config.api_key or config.api_key_encrypted),
+                
                 "custom_endpoint": config.custom_endpoint,
                 "max_tokens": config.max_tokens,
                 "temperature": float(config.temperature) if config.temperature else None,

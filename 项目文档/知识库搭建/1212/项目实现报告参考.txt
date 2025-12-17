@@ -1,0 +1,7 @@
+参考文献：（放在文档最后）
+
+[1]8567-2006-gbt-e-300标准
+[2]backendV1.1-fastapi后端
+[3]FastApi-https://fastapi.tiangolo.com/zh/
+
+文档制作：黄飞扬（主要）+谷强（部分内容+校对）

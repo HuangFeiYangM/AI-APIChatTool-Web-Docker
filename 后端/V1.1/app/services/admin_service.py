@@ -196,7 +196,9 @@ class AdminService:
         total_messages = self.message_repo.count()
         
         # API调用统计
+        # api_stats = self.api_call_repo.get_overall_stats(days=30)
         api_stats = self.api_call_repo.get_overall_stats(days=30)
+
         
         # 系统运行时间
         system_uptime = psutil.boot_time()
@@ -215,93 +217,93 @@ class AdminService:
             "api_success_rate": api_stats.get("success_rate", 0)
         }
     
-    # def get_daily_stats(self, days: int = 7) -> List[Dict[str, Any]]:
-    #     """获取每日统计信息"""
-    #     end_date = datetime.now()
-    #     start_date = end_date - timedelta(days=days)
+    def get_daily_stats(self, days: int = 7) -> List[Dict[str, Any]]:
+        """获取每日统计信息"""
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=days)
         
-    #     daily_stats = []
-    #     current_date = start_date
+        daily_stats = []
+        current_date = start_date
         
-    #     while current_date <= end_date:
-    #         date_str = current_date.strftime("%Y-%m-%d")
+        while current_date <= end_date:
+            date_str = current_date.strftime("%Y-%m-%d")
             
-    #         # 获取该日期的统计数据
-    #         new_users = self.user_repo.count_users_by_date(current_date)
-    #         active_users = self.user_repo.count_active_users_by_date(current_date)
-    #         conversation_count = self.conversation_repo.count_by_date(current_date)
-    #         message_count = self.message_repo.count_by_date(current_date)
-    #         api_stats = self.api_call_repo.get_stats_by_date(current_date)
+            # 获取该日期的统计数据
+            new_users = self.user_repo.count_users_by_date(current_date)
+            active_users = self.user_repo.count_active_users_by_date(current_date)
+            conversation_count = self.conversation_repo.count_by_date(current_date)
+            message_count = self.message_repo.count_by_date(current_date)
+            api_stats = self.api_call_repo.get_stats_by_date(current_date)
             
-    #         daily_stats.append({
-    #             "date": date_str,
-    #             "new_users": new_users,
-    #             "active_users": active_users,
-    #             "conversation_count": conversation_count,
-    #             "message_count": message_count,
-    #             "api_call_count": api_stats.get("call_count", 0),
-    #             "tokens_used": api_stats.get("total_tokens", 0)
-    #         })
+            daily_stats.append({
+                "date": date_str,
+                "new_users": new_users,
+                "active_users": active_users,
+                "conversation_count": conversation_count,
+                "message_count": message_count,
+                "api_call_count": api_stats.get("call_count", 0),
+                "tokens_used": api_stats.get("total_tokens", 0)
+            })
             
-    #         current_date += timedelta(days=1)
+            current_date += timedelta(days=1)
         
-    #     return daily_stats
+        return daily_stats
     
     
     # 修改 app/services/admin_service.py 中的 get_system_stats 方法
 
-    def get_system_stats(self) -> Dict[str, Any]:
-        """获取系统统计信息"""
-        try:
-            # 用户统计
-            total_users = self.user_repo.count()
-            active_users = len(self.user_repo.get_active_users())
-            locked_users = len(self.user_repo.get_locked_users())
+    # def get_system_stats(self) -> Dict[str, Any]:
+    #     """获取系统统计信息"""
+    #     try:
+    #         # 用户统计
+    #         total_users = self.user_repo.count()
+    #         active_users = len(self.user_repo.get_active_users())
+    #         locked_users = len(self.user_repo.get_locked_users())
             
-            # 对话统计
-            total_conversations = self.conversation_repo.count()
+    #         # 对话统计
+    #         total_conversations = self.conversation_repo.count()
             
-            # 消息统计
-            total_messages = self.message_repo.count()
+    #         # 消息统计
+    #         total_messages = self.message_repo.count()
             
-            # API调用统计 - 改为使用我们现有的方法
-            api_stats = self.get_overall_api_stats(days=30)
+    #         # API调用统计 - 改为使用我们现有的方法
+    #         api_stats = self.get_overall_api_stats(days=30)
             
-            # 系统运行时间
-            import time
-            try:
-                import psutil
-                system_uptime = psutil.boot_time()
-                uptime_hours = (time.time() - system_uptime) / 3600
-            except:
-                uptime_hours = 0
+    #         # 系统运行时间
+    #         import time
+    #         try:
+    #             import psutil
+    #             system_uptime = psutil.boot_time()
+    #             uptime_hours = (time.time() - system_uptime) / 3600
+    #         except:
+    #             uptime_hours = 0
             
-            return {
-                "total_users": total_users,
-                "active_users": active_users,
-                "locked_users": locked_users,
-                "total_conversations": total_conversations,
-                "total_messages": total_messages,
-                "total_api_calls": api_stats.get("total_calls", 0),
-                "total_tokens_used": api_stats.get("total_tokens", 0),
-                "system_uptime": round(uptime_hours, 2),
-                "avg_response_time": api_stats.get("avg_response_time", 0),
-                "api_success_rate": api_stats.get("success_rate", 0)
-            }
-        except Exception as e:
-            logger.error(f"获取系统统计失败: {e}", exc_info=True)
-            return {
-                "total_users": 0,
-                "active_users": 0,
-                "locked_users": 0,
-                "total_conversations": 0,
-                "total_messages": 0,
-                "total_api_calls": 0,
-                "total_tokens_used": 0,
-                "system_uptime": 0,
-                "avg_response_time": 0,
-                "api_success_rate": 0
-            }
+    #         return {
+    #             "total_users": total_users,
+    #             "active_users": active_users,
+    #             "locked_users": locked_users,
+    #             "total_conversations": total_conversations,
+    #             "total_messages": total_messages,
+    #             "total_api_calls": api_stats.get("total_calls", 0),
+    #             "total_tokens_used": api_stats.get("total_tokens", 0),
+    #             "system_uptime": round(uptime_hours, 2),
+    #             "avg_response_time": api_stats.get("avg_response_time", 0),
+    #             "api_success_rate": api_stats.get("success_rate", 0)
+    #         }
+    #     except Exception as e:
+    #         logger.error(f"获取系统统计失败: {e}", exc_info=True)
+    #         return {
+    #             "total_users": 0,
+    #             "active_users": 0,
+    #             "locked_users": 0,
+    #             "total_conversations": 0,
+    #             "total_messages": 0,
+    #             "total_api_calls": 0,
+    #             "total_tokens_used": 0,
+    #             "system_uptime": 0,
+    #             "avg_response_time": 0,
+    #             "api_success_rate": 0
+    #         }
 
     
     # def get_system_health(self) -> Dict[str, Any]:
@@ -547,11 +549,63 @@ class AdminService:
         }
 
     # 添加这个方法到 AdminService 类中
+    # def get_overall_api_stats(self, days: int = 30) -> Dict[str, Any]:
+    #     """获取整体API调用统计（简化版本）"""
+    #     try:
+    #         from datetime import datetime, timedelta
+    #         from sqlalchemy import func
+            
+    #         end_date = datetime.now()
+    #         start_date = end_date - timedelta(days=days)
+            
+    #         # 使用正确的模型
+    #         from app.models.api_call_log import ApiCallLog
+            
+    #         result = self.db.query(
+    #             func.count(ApiCallLog.log_id).label('total_calls'),
+    #             func.sum(ApiCallLog.total_tokens).label('total_tokens'),
+    #             func.avg(ApiCallLog.response_time_ms).label('avg_response_time'),
+    #             func.avg(func.cast(ApiCallLog.is_success, func.Integer)).label('success_rate')
+    #         ).filter(
+    #             ApiCallLog.created_at >= start_date,
+    #             ApiCallLog.created_at <= end_date
+    #         ).first()
+    #         # get_overall_api_stats 方法逻辑缺陷if result and result[0]: 条件过于严格
+    #         if result and result[0]:
+    #             return {
+    #                 "total_calls": result[0] or 0,
+    #                 "total_tokens": result[1] or 0,
+    #                 "avg_response_time": float(result[2] or 0),
+    #                 "success_rate": float(result[3] or 0) * 100 if result[3] else 0
+    #             }
+    #         else:
+    #             return {
+    #                 "total_calls": 0,
+    #                 "total_tokens": 0,
+    #                 "avg_response_time": 0,
+    #                 "success_rate": 0
+    #             }
+                
+    #         return {
+    #                 "total_calls": result[0] or 0,
+    #                 "total_tokens": result[1] or 0,
+    #                 "avg_response_time": float(result[2] or 0),
+    #                 "success_rate": float(result[3] or 0) * 100 if result[3] else 0
+    #             }
+    #     except Exception as e:
+    #         logger.error(f"获取API统计失败: {e}", exc_info=True)
+    #         return {
+    #             "total_calls": 0,
+    #             "total_tokens": 0,
+    #             "avg_response_time": 0,
+    #             "success_rate": 0
+    #         }
+    
     def get_overall_api_stats(self, days: int = 30) -> Dict[str, Any]:
-        """获取整体API调用统计（简化版本）"""
+        """获取整体API调用统计（修复版本）"""
         try:
             from datetime import datetime, timedelta
-            from sqlalchemy import func
+            from sqlalchemy import func, case
             
             end_date = datetime.now()
             start_date = end_date - timedelta(days=days)
@@ -559,40 +613,48 @@ class AdminService:
             # 使用正确的模型
             from app.models.api_call_log import ApiCallLog
             
+            # 使用case语句计算成功率（兼容各种数据库）
+            success_case = case(
+                (ApiCallLog.is_success == True, 1),
+                else_=0
+            )
+            
             result = self.db.query(
                 func.count(ApiCallLog.log_id).label('total_calls'),
                 func.sum(ApiCallLog.total_tokens).label('total_tokens'),
                 func.avg(ApiCallLog.response_time_ms).label('avg_response_time'),
-                func.avg(func.cast(ApiCallLog.is_success, func.Integer)).label('success_rate')
+                func.avg(success_case).label('success_rate')
             ).filter(
                 ApiCallLog.created_at >= start_date,
                 ApiCallLog.created_at <= end_date
             ).first()
             
-            if result and result[0]:
+            # 修复条件判断：检查result是否为None，而不是result[0]的值
+            if result is not None:
                 return {
                     "total_calls": result[0] or 0,
                     "total_tokens": result[1] or 0,
                     "avg_response_time": float(result[2] or 0),
-                    "success_rate": float(result[3] or 0) * 100 if result[3] else 0
+                    "success_rate": float(result[3] or 0)  # 返回0-1的小数，不乘以100
                 }
             else:
                 return {
                     "total_calls": 0,
                     "total_tokens": 0,
-                    "avg_response_time": 0,
-                    "success_rate": 0
+                    "avg_response_time": 0.0,
+                    "success_rate": 0.0
                 }
         except Exception as e:
             logger.error(f"获取API统计失败: {e}", exc_info=True)
             return {
                 "total_calls": 0,
                 "total_tokens": 0,
-                "avg_response_time": 0,
-                "success_rate": 0
+                "avg_response_time": 0.0,
+                "success_rate": 0.0
             }
     
-    
+
+
 
 def get_admin_service(db: Session):
     """获取管理员服务实例"""

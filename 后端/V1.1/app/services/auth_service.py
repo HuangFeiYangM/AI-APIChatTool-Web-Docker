@@ -312,7 +312,7 @@ class AuthService:
                 if user.failed_login_attempts >= 5:
                     user.is_locked = True
                     user.locked_reason = "多次登录失败"
-                    user.locked_until = datetime.now() + timedelta(minutes=30)
+                    user.locked_until = datetime.now() + timedelta(hours=24)
                     logger.warning(f"账户因多次登录失败被锁定: {username}")
                 
                 self.db.commit()
@@ -368,6 +368,18 @@ class AuthService:
         对应详细设计中的程序1：用户注册
         """
         try:
+            # 0. 新增：检查密码强度
+            from app.core.security import check_password_policy
+            
+            password_check = check_password_policy(user_data.password)
+            if not password_check["is_valid"]:
+                error_msg = "，".join(password_check["errors"])
+                logger.warning(f"密码强度不足: {user_data.username}, 错误: {error_msg}")
+                raise ValueError(f"密码强度不足: {error_msg}")
+            
+            
+            
+            
             # 1. 检查用户名是否已存在
             existing_user = self.user_repo.get_by_username(user_data.username)
             if existing_user:
@@ -380,6 +392,14 @@ class AuthService:
                 if existing_email:
                     logger.warning(f"邮箱已存在: {user_data.email}")
                     raise UserAlreadyExistsError("邮箱已存在")
+            
+            # 2.5
+            #  检查密码和确认密码是否一致（如果提供了 confirm_password）
+            if hasattr(user_data, 'confirm_password') and user_data.confirm_password:
+                if user_data.password != user_data.confirm_password:
+                    raise ValueError("密码和确认密码不一致")
+            
+            
             
             # 3. 创建用户
             hashed_password = get_password_hash(user_data.password)

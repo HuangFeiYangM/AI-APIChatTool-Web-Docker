@@ -43,3 +43,5 @@ EXPOSE 8002
 
 # 启动命令
 CMD ["python", "start_app.py"]
+
+ENV TZ=Asia/Shanghai
