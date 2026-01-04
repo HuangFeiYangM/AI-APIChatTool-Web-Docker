@@ -1,0 +1,146 @@
+.loginPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer {
+  min-height: 100vh;
+}
+
+.loginHeader {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.appTitle {
+  color: white !important;
+  margin-bottom: 10px !important;
+}
+
+.appDescription {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 16px;
+}
+
+.loginCard {
+  border-radius: 10px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+}
+
+.loginTabs {
+  width: 100%;
+}
+
+.loginTabs :global(.ant-tabs-nav) {
+  margin-bottom: 24px !important;
+}
+
+.loginTabs :global(.ant-tabs-nav-list) {
+  width: 100% !important;
+}
+
+.loginTabs :global(.ant-tabs-tab) {
+  flex: 1 !important;
+  justify-content: center !important;
+  font-size: 16px !important;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.formTitle {
+  margin-bottom: 8px !important;
+  text-align: center;
+  font-weight: 600 !important;
+}
+
+.formSubtitle {
+  color: rgba(0, 0, 0, 0.45);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.formOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgotPassword {
+  color: #1890ff;
+}
+
+.forgotPassword:hover {
+  color: #40a9ff;
+}
+
+.loginButton,
+.registerButton {
+  height: 45px !important;
+  font-size: 16px !important;
+  border-radius: 6px !important;
+  margin-top: 10px !important;
+}
+
+.registerLink,
+.loginLink {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.registerLink a,
+.loginLink a {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.registerLink a:hover,
+.loginLink a:hover {
+  color: #40a9ff;
+}
+
+.formTerms {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin: 10px 0;
+}
+
+.formTerms a {
+  color: #1890ff;
+  margin: 0 4px;
+}
+
+.loginFooter {
+  margin-top: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.features {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .loginPage {
+    padding: 10px;
+  }
+  
+  .loginCard {
+    margin: 0 10px;
+  }
+  
+  .formTitle {
+    font-size: 18px !important;
+  }
+}

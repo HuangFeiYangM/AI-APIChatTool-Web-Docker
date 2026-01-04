@@ -1,0 +1,88 @@
+.
+└── frontend/
+    ├── node-modules
+    ├── public
+    ├── src/
+    │   ├── api/
+    │   │   ├── auth.ts
+    │   │   ├── chat.ts
+    │   │   └── settings.ts
+    │   ├── assets
+    │   ├── components/
+    │   │   ├── Button/
+    │   │   │   └── index.tsx
+    │   │   ├── ErrorBoundary/
+    │   │   │   └── index.tsx
+    │   │   ├── Input/
+    │   │   │   └── index.tsx
+    │   │   ├── Layout/
+    │   │   │   ├── Footer.tsx
+    │   │   │   ├── Header.tsx
+    │   │   │   ├── index.tsx
+    │   │   │   ├── Layout.module.css
+    │   │   │   └── Sider.tsx
+    │   │   ├── Loading/
+    │   │   │   └── index.tsx
+    │   │   ├── Modal/
+    │   │   │   └── index.tsx
+    │   │   └── ModelSelector/
+    │   │       └── index.tsx
+    │   ├── hooks/
+    │   │   ├── index.ts
+    │   │   ├── useAuth.ts
+    │   │   ├── useChat.ts
+    │   │   └── useSettings.ts
+    │   ├── pages/
+    │   │   ├── ChatPage/
+    │   │   │   ├── components
+    │   │   │   ├── ChatArea.tsx
+    │   │   │   ├── ChatPage.module.css
+    │   │   │   ├── index.tsx
+    │   │   │   ├── MessageInput.tsx
+    │   │   │   └── Sidebar.tsx
+    │   │   ├── LoginPage/
+    │   │   │   ├── index.tsx
+    │   │   │   ├── LoginForm.tsx
+    │   │   │   ├── LoginPage.module.css
+    │   │   │   ├── LoginPage.tsx
+    │   │   │   └── RegisterForm.tsx
+    │   │   └── SettingsPage/
+    │   │       ├── components/
+    │   │       │   ├── ApiConfigPanel.tsx
+    │   │       │   ├── ChangePasswordForm.tsx
+    │   │       │   ├── GeneralSettingsPanel.tsx
+    │   │       │   ├── LoginHistory.tsx
+    │   │       │   ├── SettingsSidebar.tsx
+    │   │       │   ├── SystemStatsPanel.tsx
+    │   │       │   ├── UserInfoForm.tsx
+    │   │       │   └── UserManagementPanel.tsx
+    │   │       ├── index.tsx
+    │   │       └── SettingsPage.module.css
+    │   ├── router/
+    │   │   └── index.tsx
+    │   ├── services/
+    │   │   └── modelConfigService.ts
+    │   ├── store/
+    │   │   ├── authStore.ts
+    │   │   └── chatStore.ts
+    │   ├── types/
+    │   │   ├── api.ts
+    │   │   ├── auth.ts
+    │   │   ├── chat.ts
+    │   │   ├── global.d.ts
+    │   │   ├── index.ts
+    │   │   ├── settings.ts
+    │   │   └── user.ts
+    │   ├── utils/
+    │   │   ├── request.ts
+    │   │   └── storage.ts
+    │   ├── App.tsx
+    │   ├── custom.d.ts
+    │   ├── index.css
+    │   └── main.tsx
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── bite.config.ts
