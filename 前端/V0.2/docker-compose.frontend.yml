@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    container_name: ai-chat-frontend
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      default:
+        external: true
+        name: app-network  # 连接到后端的网络
+    environment:
+      - VITE_API_URL=http://backend:8002
+
+networks:
+  default:
+    external: true
+    name: app-network

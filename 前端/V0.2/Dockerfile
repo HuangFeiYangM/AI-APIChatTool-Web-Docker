@@ -1,7 +1,6 @@
 # 阶段1：构建阶段
 FROM node:18-alpine AS builder
 
-# 设置工作目录
 WORKDIR /app
 
 # 复制包管理文件
@@ -9,7 +8,7 @@ COPY package*.json ./
 COPY tsconfig*.json ./
 COPY vite.config.ts ./
 
-# 安装依赖（包括构建依赖）
+# 安装依赖
 RUN npm ci --no-audit --prefer-offline
 
 # 复制源代码
@@ -17,7 +16,9 @@ COPY src ./src
 COPY public ./public
 COPY index.html ./
 
-# 构建应用
+# 构建应用（传入环境变量）
+ARG VITE_API_URL
+ENV VITE_API_URL=${VITE_API_URL}
 RUN npm run build
 
 # 阶段2：运行阶段 - 使用nginx
@@ -32,5 +33,4 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # 暴露端口
 EXPOSE 80
 
-# 启动nginx
 CMD ["nginx", "-g", "daemon off;"]
