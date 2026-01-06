@@ -1,0 +1,195 @@
+/* src/pages/SettingsPage/SettingsPage.module.css */
+.settingsLayout {
+  min-height: calc(100vh - 64px);
+  background: #f0f2f5;
+}
+
+.sider {
+  background: #fff;
+  border-right: 1px solid #e8e8e8;
+}
+
+.content {
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+}
+
+.sidebar {
+  padding: 24px 0;
+}
+
+.sidebarHeader {
+  padding: 0 24px;
+  margin-bottom: 16px;
+}
+
+.sidebarTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.settingsMenu {
+  border-right: none;
+}
+
+/* API配置面板样式 */
+.apiConfigPanel {
+  min-height: 100%;
+}
+
+.panelHeader {
+  margin-bottom: 24px;
+}
+
+.panelHeader h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.panelHeader p {
+  margin: 8px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.modelSelectCard {
+  height: 100%;
+}
+
+.modelInfo {
+  margin-top: 16px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.modelDescription {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.configFormCard {
+  height: 100%;
+}
+
+.configListCard {
+  margin-top: 24px;
+}
+
+.enabled {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.disabled {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+.configTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.configTable th,
+.configTable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+}
+
+.configTable th {
+  background: #fafafa;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.configTable tbody tr:hover {
+  background: #fafafa;
+}
+
+/* 用户管理面板样式 */
+.userManagementPanel {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+/* 系统统计面板样式 */
+.systemStatsPanel {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.searchBar {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.filterControls {
+  display: flex;
+  gap: 8px;
+}
+
+/* 系统统计面板中的统计卡片行 */
+.statsRow {
+  margin-bottom: 16px;
+}
+
+/* 卡片样式优化 */
+.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 表格样式优化 */
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* 状态标签样式 */
+.ant-tag {
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .filterBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .searchBar {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  
+  .filterControls {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,90 @@
+
+
+services:
+  # MySQL 数据库服务
+  mysql:
+    image: mysql:8.0
+    container_name: multi-model-mysql-v1.1-releaseV1.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # 生产环境请修改
+      MYSQL_DATABASE: mysql8db
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppassword
+      TZ: Asia/Shanghai
+    ports:
+      - "3311:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      # 挂载初始化脚本
+      - ./backend/buildDB/init_v1.0.sql:/docker-entrypoint-initdb.d/init_v1.0.sql:ro
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+    stdin_open: true  # 保持标准输入打开
+    tty: true         # 分配伪终端
+    
+  # 后端应用服务
+  backend:
+    build: ./backend  # 构建上下文指向 backend 目录
+    container_name: multi-model-backend-v1.1-releaseV1.0
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      # 数据库连接
+      DATABASE_URL: mysql+pymysql://appuser:apppassword@mysql:3306/mysql8db?charset=utf8mb4
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: 8002
+      DEBUG: "true"
+      # JWT 配置
+      SECRET_KEY: your-secret-key-change-in-production-1234567890abcdef
+      # API 密钥（可以从 .env 文件或环境变量注入）
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      WENXIN_API_KEY: ${WENXIN_API_KEY:-}
+      TZ: Asia/Shanghai
+    ports:
+      - "8002:8002"
+    volumes:
+      # 挂载日志目录
+      - ./backend/logs:/app/logs
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; r = requests.get('http://localhost:8002/health'); exit(0 if r.status_code == 200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # 前端应用服务
+  frontend:
+    build: ./frontend  # 构建上下文指向 frontend 目录
+    container_name: ai-chat-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend  # 确保后端先启动
+    ports:
+      - "8080:80"  # 主机端口:容器端口
+    networks:
+      - app-network
+    environment:
+      # 设置前端 API 地址（指向后端服务）
+      - VITE_API_URL=http://backend:8002
+      # 如果前端使用其他环境变量，可在此添加
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
