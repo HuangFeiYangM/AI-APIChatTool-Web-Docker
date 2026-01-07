@@ -27,6 +27,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
       sourcemap: mode === 'development',
+      // development
       minify: 'terser',
       terserOptions: {
         compress: {

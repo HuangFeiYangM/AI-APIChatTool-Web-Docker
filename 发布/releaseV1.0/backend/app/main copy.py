@@ -73,11 +73,11 @@ app = FastAPI(
     lifespan=lifespan,  # 使用lifespan管理器
 )
 
-# 设置CORS（应该在其他中间件之前）- 修复CORS问题
+# 设置CORS（应该在其他中间件之前）
 app.add_middleware(
     CORSMiddleware,
-    # 允许所有来源（开发环境）
-    allow_origins=["*"],
+    # allow_origins=settings.CORS_ORIGINS,
+    allow_origins=["http://localhost:8080", "https://frp-shy.com:11687", "http://frp-shy.com:11687","http://127.0.0.1:8080"],  # 只保留这一个
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -4,8 +4,15 @@ import { message } from 'antd';
 import type { AxiosResponse, AxiosRequestConfig } from 'axios';
 
 // 创建axios实例
+// const axiosInstance = axios.create({
+//   baseURL: 'http://localhost:8002/api/v1',
+//   timeout: 30000,
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// });
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:8002/api/v1',
+  baseURL: '/api/v1',  // 改为相对路径，会被Nginx代理
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',
